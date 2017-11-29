@@ -10,8 +10,10 @@ var stringBase = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p
 Ex online compares str with this regular expression of letters. Can we not compare str with str, and output letterCount?
 
   -take passed function str, compare using this?
+
 */
 
+const str = process.argv.slice(2).join(' ').toLowerCase();
 
 function countLetters(str){
   var str = str.split(' ').join('').toLowerCase(), //should be able to compare back just using "this"
